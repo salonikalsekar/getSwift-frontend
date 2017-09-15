@@ -1,0 +1,261 @@
+/*
+* GetSwift Main Stylesheet
+* Author: Yugi Naili
+*/
+
+
+/*
+ * Header Styles
+ */
+
+header {
+  height: 40px;
+}
+
+.navbar-container {
+  display: inline-block;
+  background-color: #DE695B;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.branding {
+  float: left;
+}
+
+.branding .logo {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 140px auto;
+  background-position: center center;
+}
+
+.menu {
+  float: right;
+}
+
+.menu .nav-menu {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu .nav-menu li {
+  float: left;
+  padding: 1.5rem 2rem;
+  color: #FFF;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  line-height: 1rem;
+}
+
+.menu .nav-icon {
+  position: relative;
+  display: inline-block;
+  width: 2.8rem;
+  height: 1.6rem;
+  margin-top: 1.2rem;
+  margin-left: 1.2rem;
+  margin-right: 2rem;
+  border-top: 0.2rem solid #fff;
+  border-bottom: 0.2rem solid #fff;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.menu .nav-icon:before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 100%;
+  border-top: 0.2rem solid #fff;
+}
+
+
+/*
+ * Content Styles
+ */
+
+.search-form {
+  margin: 2rem 0;
+}
+
+.search-form .search {
+  padding: 2.5rem;
+}
+
+.sidemenu, .drivers, .jobs {
+  margin-top: 2rem;
+  padding: .5rem;
+  background-color: #EEEEEE;
+  border-radius: .3rem;
+}
+
+.sidemenu span, .drivers span, .jobs span {
+  display: block;
+  padding: 1rem;
+  color: #DE695B;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.drivers ul, .jobs ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 1rem .5rem;
+  list-style: none;
+  background-color: #FFF;
+  border-radius: .5rem;
+  border-bottom: .1rem solid #DADADA;
+}
+
+.drivers ul li:last-child {
+  margin-left: auto;
+}
+
+.jobs ul li {
+  display: inline-block;
+  width: 100%;  
+}
+
+.drivers .thumb {
+  width: 3.4rem;
+  height: auto;
+  border-radius: .6rem;
+  -moz-border-radius: .6rem;
+  -webkit-border-radius: .6rem;
+}
+
+.drivers .name {
+  color: #ED454F;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.drivers .avail {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.drivers .count, .drivers .timer {
+  padding-left: 1rem;
+  color: #5B5B5B;
+  font-size: 1.3rem;
+}
+
+.drivers .timer {
+  text-align: right;
+}
+
+.jobs .number {
+  float: left;
+  padding: .3rem 0;
+  font-size: 1.3rem;
+  color: #5B5B5B;
+}
+
+.jobs .status {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #EB2D39;
+  text-transform: uppercase;
+}
+
+.jobs .location {
+  color: #DE695B;
+  font-size: 1.3rem;
+  padding: .3rem 0;
+}
+
+.jobs .client  {
+  color: #41D9A0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: .3rem 0;
+}
+
+.jobs .status {
+  float: right;
+  padding: .3rem 0;
+}
+
+.jobs .due {
+  float: left;
+  padding: .3rem 0;
+  color: #EB2D39;
+}
+
+.jobs .timer {
+  display: flex;
+  float: right;
+  padding: .3rem 0;
+}
+
+.jobs .timer-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(../img/timer-icon.png) no-repeat;
+  background-size: 1.8rem auto;
+  background-position: center center;
+}
+
+
+#map{
+		float:left;
+		width:110%;
+		min-height:500px;
+	}
+	#map .image{
+    background: url("https://www.wired.com/wp-content/uploads/2016/11/GoogleMapTA.jpg")no-repeat scroll center top transparent;
+    filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+		height:100vh;
+	}
+	#options{
+		background-color:#EEEEEE;
+		border: 1px solid #E3E3E3;
+		color:#DF6857;
+		cursor: pointer;
+		display: none;
+		height: 50px;
+		left:27%;
+		position: absolute;
+		text-align: center;
+		top:12%;
+		width: 120px;
+		z-index: 5;
+	}
+	#options span{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#bottom-bar{
+		display: none;
+		background-color:black;
+		width:100%;
+		height:20px;
+	}
+	.arrow {
+	  width: 0; 
+	  height: 0; 
+	  border-left: 5px solid transparent;
+	  border-right: 5px solid transparent;
+	  
+	  border-bottom: 5px solid black;
+	}
